@@ -1,0 +1,13 @@
+{
+    "image": "maps/example-tiles.png",
+    "tiles": [
+        {"rect": [2,   2,  64, 41],  "origin": 32, "properties": {"type": "block"}},
+        {"rect": [68,  11,  64, 56],  "origin": 32, "properties": {"type": "teleport"}},
+        {"rect": [2,   43, 32, 103], "origin": 16, "properties": {"type": "block"}},
+        {"rect": [36,  77, 48, 70],  "origin": 16, "properties": {"type": "block"}},
+        {"rect": [203, 6,  38, 46],  "origin": 8,  "properties": {"type": "block"}},
+        {"rect": [90,  72, 48, 45],  "origin": 24, "properties": {"type": "player"}},
+
+        {"rect": [0,  0,  48, 128],  "origin": 16, "properties": {"type": "door", "hidden": true}},
+    ]
+}

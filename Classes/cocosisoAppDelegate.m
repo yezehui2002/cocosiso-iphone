@@ -62,7 +62,7 @@
 	//
 	EAGLView *glView = [EAGLView viewWithFrame:[window bounds]
 								   pixelFormat:kEAGLColorFormatRGB565	// kEAGLColorFormatRGBA8
-								   depthFormat:0						// GL_DEPTH_COMPONENT16_OES
+								   depthFormat:GL_DEPTH_COMPONENT16_OES // Depth buffer required to sort isometric tiles
 						];
 	
 	// attach the openglView to the director
@@ -104,6 +104,10 @@
 	// You can change anytime.
 	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
 
+	
+	// Set to orthographic view with depth testing so isometric objects render correctly
+	[[CCDirector sharedDirector] setProjection:kCCDirectorProjection2D];
+	[[CCDirector sharedDirector] setDepthTest:YES];
 	
 	// Removes the startup flicker
 	[self removeStartupFlicker];
