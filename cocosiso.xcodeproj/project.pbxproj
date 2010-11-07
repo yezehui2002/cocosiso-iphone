@@ -65,6 +65,12 @@
 		50F414F01069373D002A0D5E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414EC1069373D002A0D5E /* Default.png */; };
 		50F414F11069373D002A0D5E /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414ED1069373D002A0D5E /* fps_images.png */; };
 		50F414F21069373D002A0D5E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414EE1069373D002A0D5E /* Icon.png */; };
+		94700F251286604F00ABA604 /* Geometry3D.c in Sources */ = {isa = PBXBuildFile; fileRef = 94700F181286604F00ABA604 /* Geometry3D.c */; };
+		94700F261286604F00ABA604 /* IsoLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 94700F1C1286604F00ABA604 /* IsoLayer.m */; };
+		94700F271286604F00ABA604 /* IsoMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 94700F1E1286604F00ABA604 /* IsoMap.m */; };
+		94700F281286604F00ABA604 /* IsoNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 94700F201286604F00ABA604 /* IsoNode.m */; };
+		94700F291286604F00ABA604 /* IsoSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 94700F221286604F00ABA604 /* IsoSprite.m */; };
+		94700F2A1286604F00ABA604 /* IsoTileset.m in Sources */ = {isa = PBXBuildFile; fileRef = 94700F241286604F00ABA604 /* IsoTileset.m */; };
 		DC6640030F83B3EA000B3E49 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */; };
 		DC6640050F83B3EA000B3E49 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640040F83B3EA000B3E49 /* OpenAL.framework */; };
 		DCCBF1B70F6022AE0040855A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */; };
@@ -316,6 +322,19 @@
 		50F414ED1069373D002A0D5E /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
 		50F414EE1069373D002A0D5E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		50F414EF1069373D002A0D5E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94700F181286604F00ABA604 /* Geometry3D.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Geometry3D.c; sourceTree = "<group>"; };
+		94700F191286604F00ABA604 /* Geometry3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geometry3D.h; sourceTree = "<group>"; };
+		94700F1A1286604F00ABA604 /* GLfloatArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLfloatArray.h; sourceTree = "<group>"; };
+		94700F1B1286604F00ABA604 /* IsoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsoLayer.h; sourceTree = "<group>"; };
+		94700F1C1286604F00ABA604 /* IsoLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsoLayer.m; sourceTree = "<group>"; };
+		94700F1D1286604F00ABA604 /* IsoMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsoMap.h; sourceTree = "<group>"; };
+		94700F1E1286604F00ABA604 /* IsoMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsoMap.m; sourceTree = "<group>"; };
+		94700F1F1286604F00ABA604 /* IsoNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsoNode.h; sourceTree = "<group>"; };
+		94700F201286604F00ABA604 /* IsoNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsoNode.m; sourceTree = "<group>"; };
+		94700F211286604F00ABA604 /* IsoSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsoSprite.h; sourceTree = "<group>"; };
+		94700F221286604F00ABA604 /* IsoSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsoSprite.m; sourceTree = "<group>"; };
+		94700F231286604F00ABA604 /* IsoTileset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsoTileset.h; sourceTree = "<group>"; };
+		94700F241286604F00ABA604 /* IsoTileset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsoTileset.m; sourceTree = "<group>"; };
 		DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DC6640040F83B3EA000B3E49 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -549,6 +568,7 @@
 			children = (
 				504DFC6810AF1739006D82FE /* LICENSE.cocos2d */,
 				504DFC6910AF1739006D82FE /* LICENSE.cocosdenshion */,
+				94700F171286604F00ABA604 /* cocosiso */,
 				506EDAA3102F461B00A389B3 /* cocos2d Sources */,
 				2D500B1D0D5A766B00DBA0E3 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -715,6 +735,27 @@
 				50F414EF1069373D002A0D5E /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		94700F171286604F00ABA604 /* cocosiso */ = {
+			isa = PBXGroup;
+			children = (
+				94700F191286604F00ABA604 /* Geometry3D.h */,
+				94700F181286604F00ABA604 /* Geometry3D.c */,
+				94700F1A1286604F00ABA604 /* GLfloatArray.h */,
+				94700F1B1286604F00ABA604 /* IsoLayer.h */,
+				94700F1C1286604F00ABA604 /* IsoLayer.m */,
+				94700F1D1286604F00ABA604 /* IsoMap.h */,
+				94700F1E1286604F00ABA604 /* IsoMap.m */,
+				94700F1F1286604F00ABA604 /* IsoNode.h */,
+				94700F201286604F00ABA604 /* IsoNode.m */,
+				94700F211286604F00ABA604 /* IsoSprite.h */,
+				94700F221286604F00ABA604 /* IsoSprite.m */,
+				94700F231286604F00ABA604 /* IsoTileset.h */,
+				94700F241286604F00ABA604 /* IsoTileset.m */,
+			);
+			name = cocosiso;
+			path = libs/cocosiso;
 			sourceTree = "<group>";
 		};
 		E02BB764126CC223006E46A2 /* cocos2d */ = {
@@ -1135,6 +1176,12 @@
 				1F3B9A2D0EF2145700286867 /* cocosisoAppDelegate.m in Sources */,
 				506EDC31102F528A00A389B3 /* HelloWorldScene.m in Sources */,
 				E0F80F60120A0182005866B8 /* RootViewController.m in Sources */,
+				94700F251286604F00ABA604 /* Geometry3D.c in Sources */,
+				94700F261286604F00ABA604 /* IsoLayer.m in Sources */,
+				94700F271286604F00ABA604 /* IsoMap.m in Sources */,
+				94700F281286604F00ABA604 /* IsoNode.m in Sources */,
+				94700F291286604F00ABA604 /* IsoSprite.m in Sources */,
+				94700F2A1286604F00ABA604 /* IsoTileset.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
